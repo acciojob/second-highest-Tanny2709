@@ -13,6 +13,10 @@ function secondHighest(arr) {
     }
   }
 
-  // If all elements are the same, secondMax stays -Infinity
+  // Handle case when all elements are same
+  if (secondMax === -Infinity) {
+    return -Infinity;
+  }
+
   return secondMax;
 }
